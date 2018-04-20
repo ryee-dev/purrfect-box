@@ -6,7 +6,12 @@
     font-size: 1.4em;
     &:hover {
       font-weight: bolder;
-
+      color: black;
     }
   }
+
+  .home-link {
+    margin: 0 auto;
+  }
+
 }

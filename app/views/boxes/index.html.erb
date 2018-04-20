@@ -1,12 +1,20 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <a class="navbar-item">
-    Home
+  <a class="navbar-item home-link">
+    Purrfect Box
   </a>
 </nav>
 
 <div class="hero">
-  <div class="container">
-    <h1 class="title is-1">Purrfect Box</h1>
+  <div class="container quote">
+    <div class="card">
+      <div class="card-content">
+        <p class="title is-3">
+          “If I fits, I sits."</p>
+        <p class="subtitle">
+          - cat
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -14,18 +22,29 @@
   <div class="container home-boxes">
     <div class="box">
       <h3 class="title is-4">Here are a few of our boxes.</h3>
-      <div class="columns">
-        <div class="column box subbox" id="subbox1">
-          <%= image_tag("box-1.png", :alt => "box") %>
-        </div>
-        <div class="column box subbox" id="subbox2">
-          <%= image_tag("box-1.png", :alt => "box") %>
-        </div>
-        <div class="column box subbox" id="subbox3">
-          <%= image_tag("box-1.png", :alt => "box") %>
-        </div>
-        <div class="column box subbox" id="subbox3">
-          <%= image_tag("box-1.png", :alt => "box") %>
+        <div class="row">
+          <div class="columns">
+            <div class="column box subbox" id="subbox1">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+            <div class="column box subbox" id="subbox2">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+            <div class="column box subbox" id="subbox3">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+          </div>
+          <div class="columns">
+            <div class="column box subbox" id="subbox1">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+            <div class="column box subbox" id="subbox2">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+            <div class="column box subbox" id="subbox3">
+              <%= image_tag("box-1.png", :alt => "box") %>
+            </div>
+          </div>
         </div>
       </div>
     </div>

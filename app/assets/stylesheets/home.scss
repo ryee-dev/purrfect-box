@@ -1,6 +1,20 @@
 .hero {
   h1 {
+    text-align: center;
     margin-top: 0.5em;
+  }
+
+  .quote {
+    width: 25%;
+    .card {
+      margin-top: 2em;
+      .title {
+        font-style: italic;
+      }
+      .subtitle {
+        text-align: right;
+      }
+    }
   }
 }
 
@@ -13,6 +27,12 @@
 
   .home-boxes {
     width: 70%;
+    .box {
+      background-color: linen;
+      .subbox {
+        background-color: snow;
+      }
+    }
   }
 
   .subbox {
