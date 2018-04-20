@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
   root 'boxes#index'
-  resources :boxes
+
+  get '/boxes', to: 'boxes#allBoxes'
 end

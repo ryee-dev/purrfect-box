@@ -1,8 +1,20 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <a class="navbar-item home-link">
-    Purrfect Box
-  </a>
+  <div class="navbar-start">
+    <%= link_to "Our Boxes", boxes_path, url: { action: 'boxes'}, class: "navbar-item"%>
+    <a class="navbar-item">
+      About Us
+    </a>
+  </div>
+  <div class="navbar-end">
+    <a class="navbar-item">
+      Home
+    </a>
+  </div>
 </nav>
+
+<div class="home-header">
+  <h1 class="title is-2">Purrfect Box</h1>
+</div>
 
 <div class="hero">
   <div class="container quote">
