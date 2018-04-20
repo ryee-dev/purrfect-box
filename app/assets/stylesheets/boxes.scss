@@ -17,3 +17,17 @@
     height: 120px;
   }
 }
+
+.add-box {
+  display: block;
+  margin: 0 auto;
+}
+
+.new-box-form {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  .box-form {
+    display: none;
+  }
+}

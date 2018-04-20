@@ -1,24 +1,14 @@
 <div class="section">
   <div class="container">
     <h1 class="title is-2">Our Boxes</h1>
-    <div class="box">
-      <div class="columns">
-        <% @boxes.each do |box| %>
-          <div class="column">
-            <div class="box product-box">
-              <div class="subbox">
-                <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
-              </div>
-              <div class="box-label">
-                <%= box.name %>
-              </div>
-              <div class="box-label box-price">
-                $<%= box.price %>
-              </div>
-            </div>
-          </div>
-        <% end %>
-      </div>
-    </div>
+    <%= render "boxes" %>
+
+    <button class="button is-primary is-large is-rounded add-box">Add New Box</button>
+  </div>
+</div>
+
+<div class="hero">
+  <div class="container new-box-form">
+    <%= render "box_form" %>
   </div>
 </div>
