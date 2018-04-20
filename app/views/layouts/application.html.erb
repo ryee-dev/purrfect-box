@@ -10,6 +10,17 @@
   </head>
 
   <body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-start">
+      <%= link_to "Our Boxes", boxes_path, url: {action: 'boxes'}, class: "navbar-item" %>
+      <a class="navbar-item">
+        About Us
+      </a>
+    </div>
+    <div class="navbar-end">
+      <%= link_to "Home", root_path, class: "navbar-item" %>
+    </div>
+  </nav>
     <%= yield %>
   </body>
 </html>
