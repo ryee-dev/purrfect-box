@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #F7F7F7;
+  color: gray();
+
+  .navbar-item {
+    font-size: 1.4em;
+    &:hover {
+      font-weight: bolder;
+
+    }
+  }
+}
