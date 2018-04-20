@@ -25,9 +25,17 @@ class BoxesController < ApplicationController
 
     if @box.save
       redirect_to boxes_path
-
     else
-      render :new
+      render :boxes
+    end
+  end
+
+  def update
+    @box = Box.find(params[:id])
+    if @box.update(box_params)
+      redirect_to boxes_path
+    else
+      render :boxes
     end
   end
 

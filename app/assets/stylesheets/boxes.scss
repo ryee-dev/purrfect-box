@@ -24,10 +24,21 @@
 }
 
 .new-box-form {
-  display: block;
   margin: 0 auto;
   width: 50%;
-  .box-form {
-    display: none;
-  }
 }
+
+.box-form {
+  display: none;
+}
+
+.exit-form {
+  margin-top: 1em;
+}
+
+.edit-box {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
