@@ -60,3 +60,6 @@ gem 'rspec-rails'
 gem 'launchy'
 gem 'pry'
 gem 'shoulda-matchers'
+
+# Bulma CSS Framework
+gem "bulma-rails", "~> 0.7.1"
