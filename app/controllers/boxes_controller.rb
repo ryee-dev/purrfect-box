@@ -10,7 +10,8 @@ class BoxesController < ApplicationController
   end
 
   def show
-    @box = Box.find([:id])
+    @box = Box.find(params[:id])
     render :show
   end
+
 end

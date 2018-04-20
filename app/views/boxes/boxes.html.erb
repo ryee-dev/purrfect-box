@@ -2,20 +2,23 @@
   <div class="container">
     <h1 class="title is-2">Our Boxes</h1>
     <div class="box">
-    <% @boxes.each do |box| %>
-      <div class="row">
-        <div class="columns">
-          <div class="box">
-            <div class="column subbox" id="subbox1">
-              <%= link_to image_tag("box-1.png", :alt => "box"), boxes_path(box), class: "box-image" %>
-            </div>
-            <div class="column box-label">
-              <%= box.name %>
+      <div class="columns">
+        <% @boxes.each do |box| %>
+          <div class="column">
+            <div class="box product-box">
+              <div class="subbox">
+                <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
+              </div>
+              <div class="box-label">
+                <%= box.name %>
+              </div>
+              <div class="box-label box-price">
+                $<%= box.price %>
+              </div>
             </div>
           </div>
-        </div>
+        <% end %>
       </div>
-    <% end %>
     </div>
   </div>
 </div>
