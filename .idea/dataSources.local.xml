@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails purrfect-box: test" uuid="5a9e4d09-2754-4fcb-a8da-79b4d2b29282">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails purrfect-box: development" uuid="56053389-3877-4424-bb58-3384aadb0b35">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails purrfect-box: production" uuid="02f5e323-5ef9-4caa-bd98-4f71a57429af">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <first-sync>true</first-sync>
+      <user-name>purrfect-box</user-name>
+    </data-source>
+  </component>
+</project>
