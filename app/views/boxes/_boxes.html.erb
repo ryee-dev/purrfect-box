@@ -1,21 +1,23 @@
 <div class="box">
   <div class="columns">
-    <% @boxes.each do |box| %>
-      <div class="column">
-        <div class="box product-box">
-          <div class="subbox">
-            <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
-          </div>
-          <div class="box-label">
-            <%= box.name %>
-          </div>
-          <div class="box-label box-price">
-            $<%= box.price %>
+    <div class="column">
+      <% @boxes.each do |box| %>
+          <div class="box product-box columns">
+            <div class="box column">
+              <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
+            </div>
+            <div class="box-description column">
+              <div class="box-label">
+                <%= box.name %>
+              </div>
+              <div class="box-label box-price">
+                $<%= box.price %>
+              </div>
+            </div>
+            <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
           </div>
 
-          <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
-        </div>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>

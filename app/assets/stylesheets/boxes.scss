@@ -4,9 +4,14 @@
   text-align: center;
 }
 
-.box-price {
-  color: #999999;
-  font-size: 2em;
+.product-box {
+  .box-description {
+    font-size: 1.4em;
+  }
+  .box-price {
+    color: #999999;
+    font-size: 1em;
+  }
 }
 
 
