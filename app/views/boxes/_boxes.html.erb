@@ -1,32 +1,14 @@
-<div class="box" id="carousel">
-  <div class="row">
-    <div class="columns" id="vertical-adj">
-      <i class="fa fa-chevron-left column auto arrow" aria-hidden="true">
-        <%= link_to image_tag("prev.png", :alt => "previous") %>
-      </i>
-      <div class="column is-10" >
-        <div class='carousel is-3 carousel-animated carousel-animate-slide'>
-          <div class='carousel-container columns'>
-            <% @boxes.each do |box| %>
-              <div class='carousel-item column'>
-                <figure class="image box-image">
-                  <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
-                </figure>
-                <div class="box-label">
-                  <%= box.name %>
-                </div>
-                <div class="box-label box-price">
-                  $<%= box.price %>
-                </div>
-                <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
-              </div>
-            <% end %>
-          </div>
-        </div>
-      </div>
-      <i class="fa fa-chevron-right column auto arrow" aria-hidden="true">
-        <%= link_to image_tag("next.png", :alt => "next") %>
-      </i>
+<div class="owl-carousel">
+  <% @boxes.each do |box| %>
+    <div class="box-image">
+      <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
     </div>
-  </div>
+    <div class="box-label">
+      <%= box.name %>
+    </div>
+    <div class="box-label box-price">
+      $<%= box.price %>
+    </div>
+    <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
+  <% end %>
 </div>

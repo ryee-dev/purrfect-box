@@ -12,10 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require owlcarousel2/owl.carousel
  */
 
 @import 'bulma';
-@import 'bulmacarousel.min';
+@import 'owlcarousel2/owl.carousel';
+@import 'owlcarousel2/owl.theme.default';
 @import 'navbar';
 @import 'home';
 @import 'boxes';
