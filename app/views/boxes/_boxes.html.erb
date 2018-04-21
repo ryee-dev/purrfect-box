@@ -1,21 +1,28 @@
-<div class="box">
-  <div class="columns">
-    <% @boxes.each do |box| %>
-      <div class="column">
-        <div class="box product-box">
-          <div class="subbox">
-            <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
+  <div class="box">
+    <div class='carousel is-3 carousel-animated carousel-animate-slide'>
+      <div class='carousel-container'>
+        <% @boxes.each do |box| %>
+          <div class='carousel-item'>
+            <figure class="image is-128bx128">
+              <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box), class: "box-image" %>
+            </figure>
+            <div class="box-label">
+              <%= box.name %>
+            </div>
+            <div class="box-label box-price">
+              $<%= box.price %>
+            </div>
+            <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
           </div>
-          <div class="box-label">
-            <%= box.name %>
-          </div>
-          <div class="box-label box-price">
-            $<%= box.price %>
-          </div>
-
-          <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
+        <% end %>
+      </div>
+      <div class="carousel-navigation is-centered">
+        <div class="carousel-nav-left">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="carousel-nav-right">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
       </div>
-    <% end %>
+    </div>
   </div>
-</div>
