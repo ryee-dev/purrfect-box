@@ -3,7 +3,7 @@ class CreateReviews < ActiveRecord::Migration[5.2]
     create_table :reviews do |t|
       t.column :box_id, :integer
       t.column :name, :varchar
-      t.column :review, :text
+      t.column :review, :varchar
       t.column :rating, :integer
 
       t.timestamp
