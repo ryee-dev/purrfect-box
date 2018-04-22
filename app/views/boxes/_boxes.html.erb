@@ -1,14 +1,16 @@
-<div class="owl-carousel">
+<div class="owl-carousel green-theme">
   <% @boxes.each do |box| %>
-    <div class="box-image">
-      <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
+    <div class="item">
+      <div class="box-image">
+        <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
+      </div>
+      <div class="box-label">
+        <%= box.name %>
+      </div>
+      <div class="box-label box-price">
+        $<%= box.price %>
+      </div>
+      <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
     </div>
-    <div class="box-label">
-      <%= box.name %>
-    </div>
-    <div class="box-label box-price">
-      $<%= box.price %>
-    </div>
-    <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
   <% end %>
 </div>
