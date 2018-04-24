@@ -13,11 +13,14 @@ class Box < ActiveRecord::Base
     order(created_on: :desc).limit(3)
   }
 
-  scope :most_reviews, -> {(
-    select("box.id, box.name, box.size, box.color, box.price, count(reviews.id) as reviews_count")
-    .joins(:reviews)
-    .group("products.id")
-    .order("reviews_count DESC")
-    .limit(10)
-  )}
+  def self.most_reviewed
+    boxes = self.all
+    @box = boxes.last
+    boxes.each do |box|
+      if box.reviews.length > @box.reviews.length
+        @box = box
+      end
+    end
+    @box
+  end
 end

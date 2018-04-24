@@ -1,6 +1,7 @@
 class BoxesController < ApplicationController
   def index
     @boxes = Box.all
+    @most_reviewed = Box.most_reviewed
     render :index
   end
 

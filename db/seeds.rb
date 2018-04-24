@@ -19,13 +19,25 @@
 # end
 #
 #
-# Spice.destroy_all
+
+Box.destroy_all
+Review.destroy_all
 
 15.times do |index|
   Box.create!(name: Faker::Commerce.material,
               size: Faker::Dog.size,
               color: Faker::Color.color_name,
               price: Faker::Commerce.price)
+
+  @box_id = Box.last.id
+
+  (Random.rand(15)).times do |r|
+    Review.create!(box_id: @box_id,
+                   name: Faker::Cat.name,
+                   review: Faker::Hipster.sentences(3),
+                   rating: Faker::Number.between(1, 5))
+  end
 end
 
 p "Created #{Box.count} boxes"
+p "Created #{Review.count} reviews"
