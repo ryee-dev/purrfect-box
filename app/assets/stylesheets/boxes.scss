@@ -11,7 +11,7 @@
 
 .add-box {
   display: block;
-  margin: 0 auto;
+  margin: 1.5em auto;
 }
 
 .new-box-form {
@@ -33,3 +33,15 @@
   margin-top: 1em;
 }
 
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #2E2F30;
+  border: none;
+  font-size: 3em;
+  padding: 0 4em;
+  background-color: transparent;
+}
+
+.owl-dot {
+  background-color: transparent;
+  border: none;
+}
