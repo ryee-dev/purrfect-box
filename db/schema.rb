@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_04_20_232218) do
 
   create_table "boxes", force: :cascade do |t|
     t.string "name"
+    t.text "description"
     t.string "size"
     t.string "color"
     t.decimal "price", precision: 8, scale: 2

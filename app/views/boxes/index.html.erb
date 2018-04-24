@@ -1,53 +1,41 @@
 <div class="home-page">
   <div class="home-header">
-    <h1 class="title is-2">Purrfect Box</h1>
+    <h1 class="title is-2"><%= link_to image_tag("box8.png", :alt => "logo"), root_path, id: "logo" %></h1>
   </div>
+  <div class="home-body">
 
-  <div class="hero">
-    <div class="container quote">
-      <div class="card">
-        <div class="card-content">
-          <p class="title is-3">
-            “If I fits, I sits."</p>
-          <p class="subtitle">
-            - cat
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="section">
+      <div class="container home-boxes">
 
-  <div class="section">
-    <div class="container home-boxes">
-
-      <div class="box" id="top-boxes">
-        <h3 class="title is-4">Here is our most reviewed box.</h3>
-        <div class="row columns">
-          <div class="column">
-            <%= link_to image_tag("box-1.png", :alt => "box"), box_path(@most_reviewed) %>
-          </div>
-          <div class="column">
-            <h3><%= @most_reviewed.name %></h3>
-            <p># of Reviews: <%= @most_reviewed.reviews.length %></p>
+        <div class="box" id="top-boxes">
+          <h3 class="title is-4">Here is our most reviewed box.</h3>
+          <div class="row columns">
+            <div class="column">
+              <%= link_to image_tag("box-1.png", :alt => "box"), box_path(@most_reviewed) %>
+            </div>
+            <div class="column">
+              <h3><%= @most_reviewed.name %></h3>
+              <p># of Reviews: <%= @most_reviewed.reviews.length %></p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="box" id="recent-boxes">
-        <h3 class="title is-4">Our most recently added boxes.</h3>
-        <div class="row">
-          <div class="columns">
-            <% @boxes.three_most_recent.each do |box| %>
-              <div class="column box subbox" id="subbox1">
-                <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
-                <p><%= box.name %> Box</p>
-                <p>$<%= box.price %></p>
-              </div>
-            <% end %>
+        <div class="box" id="recent-boxes">
+          <h3 class="title is-4">Our most recently added boxes.</h3>
+          <div class="row">
+            <div class="columns">
+              <% @boxes.three_most_recent.each do |box| %>
+                <div class="column box subbox" id="subbox1">
+                  <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
+                  <p><%= box.name %> Box</p>
+                  <p>$<%= box.price %></p>
+                </div>
+              <% end %>
+            </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
 </div>

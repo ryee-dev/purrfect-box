@@ -1,49 +1,58 @@
-.hero {
-  h1 {
-    text-align: center;
-    margin-top: 0.5em;
-  }
+.home-page {
+   .home-body {
+     font-family: "Comfortaa";
+     .hero {
+       h1 {
+         text-align: center;
+         margin-top: 0.5em;
+       }
 
-  .quote {
-    width: 25%;
-    .card {
-      margin-top: 2em;
-      .title {
-        font-style: italic;
-      }
-      .subtitle {
-        text-align: right;
-      }
-    }
-  }
-}
+       .quote {
+         width: 25%;
+         .card {
+           margin-top: 2em;
+           .title {
+             font-style: italic;
+           }
+           .subtitle {
+             text-align: right;
+           }
+         }
+       }
+     }
 
-.section {
-  h3 {
-    .is-4 {
-      text-align: center;
-    }
-  }
+     .section {
+       h3 {
+         font-size: 1.4em;
+         .is-4 {
+           text-align: center;
+         }
+       }
 
-  .home-boxes {
-    width: 70%;
-    #top-boxes, #recent-boxes {
-      background-color: linen;
-      .subbox {
-        background-color: snow;
-      }
-    }
-  }
+       .home-boxes {
+         width: 70%;
+         #top-boxes, #recent-boxes {
+           background-color: linen;
+           .subbox {
+             background-color: snow;
+           }
+         }
+       }
 
-  .subbox {
-    margin: 1em 0.5em;
-  }
-}
-
-.home-header {
-  display: block;
-  margin: 1.2rem auto;
-  .title {
-    text-align: center;
-  }
-}
+       .subbox {
+         margin: 1em 0.5em;
+       }
+     }
+   }
+   .home-header {
+     font-family: "Comfortaa";
+     display: block;
+     margin: 1.2rem auto;
+     .un-bold {
+       font-weight: 300;
+     }
+     .title {
+       text-align: center;
+     }
+   }
+ }
