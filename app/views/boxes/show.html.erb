@@ -8,21 +8,21 @@
               <%= image_tag("box-1.png", :alt => "box") %>
             </div>
             <div class="column box-details">
-              <h1><strong><%= @box.name %></strong> Box</h1>
+              <h1><strong><%= @box.color %> <%= @box.name %></strong> Box</h1>
               <h2 class="box-price">$<%= @box.price %></h2>
               <hr>
               <p><%= @box.description %></p>
             </div>
           </div>
         </div>
-        <hr>
+      <br>
         <div class="box box-reviews">
           <% @box.reviews.each do |review| %>
-            <strong>Author: </strong><%= review.name %>
+            <strong>Name: </strong><%= review.name %>
             <br>
-            <strong>Text: </strong><%= review.review %>
+            <strong>Review: </strong><%= review.review %>
             <br>
-            <strong>Rating: </strong><%= review.rating %>
+            <strong>Rating: </strong><%= review.rating %>/5
             <hr>
           <% end %>
         </div>

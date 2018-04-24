@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2018_04_20_232218) do
     t.text "description"
     t.string "size"
     t.string "color"
-    t.decimal "price", precision: 8, scale: 2
+    t.decimal "price", precision: 5, scale: 2
     t.datetime "created_on", null: false
     t.datetime "updated_on", null: false
   end

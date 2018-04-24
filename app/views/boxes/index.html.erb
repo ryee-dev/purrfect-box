@@ -1,6 +1,6 @@
 <div class="home-page">
   <div class="home-header">
-    <h1 class="title is-2"><%= link_to image_tag("box8.png", :alt => "logo"), root_path, id: "logo" %></h1>
+    <h1 class="title is-2"><%= link_to image_tag("logo.png", :alt => "logo"), root_path, id: "logo" %></h1>
   </div>
   <div class="home-body">
 
@@ -8,13 +8,13 @@
       <div class="container home-boxes">
 
         <div class="box" id="top-boxes">
-          <h3 class="title is-4">Here is our most reviewed box.</h3>
+          <h3 class="title is-4">Most reviewed box</h3>
           <div class="row columns">
             <div class="column">
               <%= link_to image_tag("box-1.png", :alt => "box"), box_path(@most_reviewed) %>
             </div>
             <div class="column">
-              <h3><%= @most_reviewed.name %></h3>
+              <h3><%= @most_reviewed.color %> <%= @most_reviewed.name %></h3>
               <p># of Reviews: <%= @most_reviewed.reviews.length %></p>
             </div>
           </div>
@@ -27,7 +27,7 @@
               <% @boxes.three_most_recent.each do |box| %>
                 <div class="column box subbox" id="subbox1">
                   <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
-                  <p><%= box.name %> Box</p>
+                  <p><%= box.color %> <%= box.name %> Box</p>
                   <p>$<%= box.price %></p>
                 </div>
               <% end %>

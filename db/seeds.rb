@@ -27,7 +27,7 @@ Review.destroy_all
   Box.create!(name: Faker::Commerce.material,
               description: Faker::FamilyGuy.quote,
               size: Faker::Dog.size,
-              color: Faker::Color.color_name,
+              color: Faker::Color.color_name.titleize,
               price: Faker::Commerce.price)
 
   @box_id = Box.last.id
