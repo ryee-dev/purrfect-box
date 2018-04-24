@@ -5,8 +5,9 @@ class CreateReviews < ActiveRecord::Migration[5.2]
       t.column :name, :varchar
       t.column :review, :varchar
       t.column :rating, :integer
+      t.column :created_on, :datetime, null: false
+      t.column :updated_on, :datetime, null: false
 
-      t.timestamp
     end
   end
 end

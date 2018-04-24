@@ -17,6 +17,9 @@
 # review_list.each do |box_id, name, review, rating|
 #   Review.create( box_id: box_id, name: name, review: review, rating: rating )
 # end
+#
+#
+# Spice.destroy_all
 
 15.times do |index|
   Box.create!(name: Faker::Commerce.material,

@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2018_04_20_232218) do
     t.string "size"
     t.string "color"
     t.decimal "price", precision: 8, scale: 2
+    t.datetime "created_on", null: false
+    t.datetime "updated_on", null: false
   end
 
   create_table "reviews", force: :cascade do |t|
@@ -27,6 +29,8 @@ ActiveRecord::Schema.define(version: 2018_04_20_232218) do
     t.string "name"
     t.string "review"
     t.integer "rating"
+    t.datetime "created_on", null: false
+    t.datetime "updated_on", null: false
   end
 
 end

@@ -18,33 +18,38 @@
 
 <div class="section">
   <div class="container home-boxes">
+
     <div class="box" id="top-boxes">
       <h3 class="title is-4">Here are a few of our boxes.</h3>
-        <div class="row">
-          <div class="columns">
-            <div class="column box subbox" id="subbox1">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
-            <div class="column box subbox" id="subbox2">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
-            <div class="column box subbox" id="subbox3">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
+      <div class="row">
+        <div class="columns">
+          <div class="column box subbox" id="subbox1">
+            <%= image_tag("box-1.png", :alt => "box") %>
           </div>
-          <div class="columns">
-            <div class="column box subbox" id="subbox1">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
-            <div class="column box subbox" id="subbox2">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
-            <div class="column box subbox" id="subbox3">
-              <%= image_tag("box-1.png", :alt => "box") %>
-            </div>
+          <div class="column box subbox" id="subbox2">
+            <%= image_tag("box-1.png", :alt => "box") %>
+          </div>
+          <div class="column box subbox" id="subbox3">
+            <%= image_tag("box-1.png", :alt => "box") %>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="box" id="recent-boxes">
+      <h3 class="title is-4">Our most recently added boxes.</h3>
+      <div class="row">
+        <div class="columns">
+          <% @boxes.three_most_recent.each do |box| %>
+            <div class="column box subbox" id="subbox1">
+              <%= image_tag("box-1.png", :alt => "box") %>
+              <p><%= box.name %> Box</p>
+              <p>$<%= box.price %></p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
