@@ -26,10 +26,10 @@ ActiveRecord::Schema.define(version: 2018_04_20_232218) do
   end
 
   create_table "reviews", force: :cascade do |t|
-    t.integer "box_id"
     t.string "name"
     t.string "review"
     t.integer "rating"
+    t.integer "box_id"
     t.datetime "created_on", null: false
     t.datetime "updated_on", null: false
   end
