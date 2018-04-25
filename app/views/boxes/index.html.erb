@@ -8,14 +8,16 @@
       <div class="container home-boxes">
 
         <div class="box" id="top-boxes">
-          <h3 class="title is-4">Most reviewed box</h3>
+          <h3 class="title is-4">Our most reviewed box.</h3>
           <div class="row columns">
             <div class="column">
               <%= link_to image_tag("box-1.png", :alt => "box"), box_path(@most_reviewed) %>
             </div>
             <div class="column">
-              <h3><%= @most_reviewed.color %> <%= @most_reviewed.name %> Box</h3>
-              <p># of Reviews: <%= @most_reviewed.reviews.length %></p>
+              <h3><strong><%= @most_reviewed.color %> <%= @most_reviewed.name %></strong> Box</h3>
+              <p><%= @most_reviewed.reviews.length %> reviews</p>
+              <br>
+              <p><%= @most_reviewed.description %></p>
             </div>
           </div>
         </div>
@@ -27,15 +29,14 @@
               <% @boxes.three_most_recent.each do |box| %>
                 <div class="column box subbox" id="subbox1">
                   <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
-                  <p><%= box.color %> <%= box.name %> Box</p>
+                  <p><strong><%= box.color %> <%= box.name %></strong> Box</p>
                   <p>$<%= box.price %></p>
+                  <p class="review-amount"><%= box.reviews.length %> reviews</p>
                 </div>
               <% end %>
             </div>
           </div>
         </div>
-
-        <h3><%= link_to "View All Boxes", boxes_path, url: {action: 'boxes'} %></h3>
 
       </div>
     </div>

@@ -1,8 +1,8 @@
-<div class="section edit-box">
+<div class="section">
   <div class="container">
-    <h1>Edit <strong><%= @box.color %> <% @box.name %></strong> Box</h1>
-
     <div class="box edit-form">
+      <h1>Edit <strong><%= @box.color %> <% @box.name %></strong> Box</h1>
+      <hr>
       <%= form_for @box do |f| %>
         <%= f.label :name, class: 'label' %>
         <%= f.text_field :name, class: 'input' %>
@@ -18,8 +18,9 @@
         <br><br>
         <%= f.submit class: 'button is-info is-rounded' %>
       <% end %>
+      <br>
+      <%= link_to "Back", boxes_path, class: "button is-danger is-small is-rounded" %>
 
-      <button class="button is-danger is-small is-rounded exit-form">Close</button>
     </div>
 
   </div>
