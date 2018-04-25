@@ -28,9 +28,13 @@
 }
 
 .edit-box {
+  width: 30%;
   display: block;
   margin: 0 auto;
   margin-top: 1em;
+  h1 {
+    font-size: 2em;
+  }
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -45,3 +49,6 @@
   background-color: transparent;
   border: none;
 }
+
+
+

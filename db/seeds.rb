@@ -35,7 +35,7 @@ Review.destroy_all
   (Random.rand(15)).times do |r|
     Review.create!(box_id: @box_id,
                    name: Faker::Cat.name,
-                   review: Faker::FamilyGuy.quote,
+                   review: Faker::Hipster.sentence(10),
                    rating: Faker::Number.between(1, 5))
   end
 end

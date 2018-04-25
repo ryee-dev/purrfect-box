@@ -31,6 +31,10 @@ class BoxesController < ApplicationController
     end
   end
 
+  def edit
+    @box = Box.find(params[:id])
+  end
+
   def update
     @box = Box.find(params[:id])
     if @box.update(box_params)

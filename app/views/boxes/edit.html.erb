@@ -1,3 +1,26 @@
-<h1>Edit Box</h1>
+<div class="section edit-box">
+  <div class="container">
+    <h1>Edit <strong><%= @box.color %> <% @box.name %></strong> Box</h1>
 
-<%= render "box_form" %>
+    <div class="box edit-form">
+      <%= form_for @box do |f| %>
+        <%= f.label :name, class: 'label' %>
+        <%= f.text_field :name, class: 'input' %>
+        <br><br>
+        <%= f.label :size, class: 'label' %>
+        <span class="select"><%= f.select :size, options_for_select([['Small', 'small'], ['Medium', 'medium'], ['Large', 'large']]) %></span>
+        <br><br>
+        <%= f.label :color, class: 'label' %>
+        <%= f.color_field :color %>
+        <br><br>
+        <%= f.label :price, class: 'label' %>
+        <%= f.text_field :price, step: 0.01, class: 'input', placeholder: '$' %>
+        <br><br>
+        <%= f.submit class: 'button is-info is-rounded' %>
+      <% end %>
+
+      <button class="button is-danger is-small is-rounded exit-form">Close</button>
+    </div>
+
+  </div>
+</div>

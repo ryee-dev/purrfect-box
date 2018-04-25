@@ -10,7 +10,9 @@
       <div class="box-label box-price">
         $<%= box.price %>
       </div>
-      <button class="button is-secondary is-small is-rounded edit-box">Edit</button>
+      <div class="edit-butt" data-no-turbolink>
+      <%= link_to "Edit", edit_box_path(box), class: "button is-secondary is-small is-rounded edit-box" %>
+      </div>
     </div>
   <% end %>
 </div>
