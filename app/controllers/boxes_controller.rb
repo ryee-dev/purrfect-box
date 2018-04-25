@@ -13,6 +13,7 @@ class BoxesController < ApplicationController
 
   def show
     @box = Box.find(params[:id])
+    @reviews = @box.reviews
     render :show
   end
 
@@ -42,6 +43,13 @@ class BoxesController < ApplicationController
     else
       render :boxes
     end
+  end
+
+  def destroy
+    @box = Box.find(params[:id])
+    @box.destroy
+    flash[:destroyed] = "#{@box.name} has been deleted."
+    redirect_to boxes_path
   end
 
   private
