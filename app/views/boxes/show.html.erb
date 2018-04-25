@@ -17,18 +17,26 @@
         </div>
       <br>
         <div class="box box-reviews">
-          <% @box.reviews.each do |review| %>
-            <strong>Name: </strong><%= review.name %>
-            <br>
-            <strong>Review: </strong><%= review.review %>
-            <br>
-            <strong>Rating: </strong><%= review.rating %>/5
-            <hr>
+          <% if flash[:success] %>
+            <div class="flash-success"><%= flash[:success] %></div>
+          <% end %>
+
+          <% if @box.reviews.any? %>
+            <% @box.reviews.each do |review| %>
+              <strong>Name: </strong><%= review.name %>
+              <br>
+              <strong>Review: </strong><%= review.review %>
+              <br>
+              <strong>Rating: </strong><%= review.rating %>/5
+              <hr>
+            <% end %>
+          <% else %>
+            <p>No reviews have been added yet.</p>
           <% end %>
         </div>
-<!--        <div class="box add-review">-->
-          <%#= render "box_add_review" %>
-<!--        </div>-->
+
+      <p><%= link_to "Add Review", new_box_review_path(@box) %></p>
+
 
     </div>
   </div>

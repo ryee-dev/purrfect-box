@@ -6,11 +6,12 @@ class ReviewsController < ApplicationController
 
   def create
     @box = Box.find(params[:box_id])
-    @review = @box.review.new(review_params)
+    @review = @box.reviews.new(review_params)
     if @review.save
+      flash[:success] = "#{@review.name}, your review has been successfully added."
       redirect_to box_path(@review.box)
     else
-      redirect_to box_path(params[:box_id])
+      render 'boxes/show'
     end
   end
 
