@@ -15,6 +15,17 @@
       <%= link_to "Home", root_path, class: "navbar-item" %>
       <%= link_to "Our Boxes", boxes_path, url: {action: 'boxes'}, class: "navbar-item" %>
     </div>
+    <div class="navbar-end">
+      <div class="navbar-item">
+      <% if current_user %>
+        <p>Welcome, <strong><%= current_user.username %></strong></p>&nbsp;|&nbsp;
+        <p class="nav-links"><%= link_to "Sign out", '/users/sign_out', method: 'delete' %></p>
+      <% else %>
+        <p class="nav-links"><%= link_to "Sign in", '/users/sign_in' %></p>&nbsp;|&nbsp;
+        <p class="nav-links"><%= link_to "Sign up", '/users/sign_up' %></p>
+      <% end %>
+      </div>
+    </div>
   </nav>
     <%= yield %>
   </body>
