@@ -3,15 +3,21 @@
   color: gray();
 
   .navbar-item {
-    font-size: 1.25em;
-    &:hover {
-      font-weight: bold;
-      color: black;
+    a {
+      font-size: 1.25em;
+      &:hover {
+        font-weight: 400;
+        color: black;
+      }
     }
   }
 
   .home-link {
     margin: 0 auto;
+  }
+
+  .nav-links {
+    font-size: 0.75em;
   }
 
 }

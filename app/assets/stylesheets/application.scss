@@ -15,13 +15,20 @@
  *= require owlcarousel2/owl.carousel
  */
 
+// fonts & framework
 @import 'bulma';
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700';
+
+// carousel
 @import 'owlcarousel2/owl.carousel';
 @import 'owlcarousel2/owl.theme.default';
+
+// page styling
 @import 'navbar';
 @import 'home';
 @import 'boxes';
 @import 'product_page';
+@import 'login';
+@import 'signup';
 @import 'carousel';
-@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,700';
-@import 'https://fonts.googleapis.com/css?family=Comfortaa:300,400,700';

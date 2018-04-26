@@ -5,13 +5,13 @@
         <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
       </div>
       <div class="box-label">
-        <p><%= box.name %> Box</p>
+        <p><strong><%= box.color %> <%= box.name %></strong> Box</p>
       </div>
       <div class="box-label box-price">
         $<%= box.price %>
       </div>
       <div class="row box_options">
-        <%= link_to "Edit", edit_box_path(box), class: "button is-link is-small is-rounded edit-box" %>
+        <%= link_to "Edit", edit_box_path(box), class: "button is-link is-small is-rounded edit-box" %> &nbsp;
         <%= link_to "Delete", box_path(box), :data => { :confirm => "Are you sure you would like to delete this box?", :method => "delete" }, class: "button is-danger is-small is-rounded delete-box" %>
       </div>
     </div>
