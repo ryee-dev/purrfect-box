@@ -4,4 +4,20 @@
   padding-bottom: 1em;
 }
 
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #2E2F30;
+  border: none;
+  font-size: 3em;
+  margin: 0 2em;
+  background-color: transparent;
+  &:hover {
+    color: darkblue;
+    background-color: transparent;
+  }
+}
+
+.owl-dot {
+  background-color: transparent;
+  border: none;
+}
 
