@@ -63,5 +63,7 @@ gem 'pry'
 gem 'shoulda-matchers'
 gem 'faker'
 gem 'owlcarousel2'
+gem 'devise'
+
 # Bulma CSS Framework
 gem "bulma-rails", "~> 0.7.1"

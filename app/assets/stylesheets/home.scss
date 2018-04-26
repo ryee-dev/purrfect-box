@@ -1,67 +1,55 @@
 .home-page {
-   .home-body {
-     font-family: "Comfortaa";
-     .hero {
-       h1 {
-         text-align: center;
-         margin-top: 0.5em;
-       }
+  .home-body {
+    font-family: "Comfortaa";
+    .hero {
+      h1 {
+        text-align: center;
+        margin-top: 0.5em;
+      }
+      .section {
+        h3 {
+          font-size: 1.4em;
+          .is-4 {
+            text-align: center;
+          }
+        }
 
-       .quote {
-         width: 25%;
-         .card {
-           margin-top: 2em;
-           .title {
-             font-style: italic;
-           }
-           .subtitle {
-             text-align: right;
-           }
-         }
-       }
-     }
+        .home-boxes {
+          width: 70%;
+          .subbox {
+            margin: 0 auto;
+            background-color: snow;
+          }
+        }
+      }
+    }
+  }
+  .home-header {
+    font-family: "Comfortaa";
+    display: block;
+    margin: 1.2rem auto;
+    .un-bold {
+      font-weight: 300;
+    }
+    .title {
+      text-align: center;
+    }
+  }
+}
 
-     .section {
-       h3 {
-         font-size: 1.4em;
-         .is-4 {
-           text-align: center;
-         }
-       }
-
-       .home-boxes {
-         width: 70%;
-         #top-boxes, #recent-boxes {
-           background-color: linen;
-           .subbox {
-             background-color: snow;
-           }
-         }
-       }
-
-       .subbox {
-         margin: 1em 0.5em;
-       }
-     }
-   }
-   .home-header {
-     font-family: "Comfortaa";
-     display: block;
-     margin: 1.2rem auto;
-     .un-bold {
-       font-weight: 300;
-     }
-     .title {
-       text-align: center;
-     }
-   }
- }
+#top-boxes, #recent-boxes {
+  background-color: linen;
+  .most-reviewed {
+    display: block;
+    margin: 0 auto;
+  }
+}
 
 #logo {
   img {
     height: 15%;
     width: 15%;
-    margin: 0 auto -1em auto;
+    margin: 0 auto;
   }
 }
 

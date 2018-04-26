@@ -11,7 +11,7 @@
           <h3 class="title is-4">Our most reviewed box.</h3>
           <div class="row columns">
             <div class="column">
-              <%= link_to image_tag("box-1.png", :alt => "box"), box_path(@most_reviewed) %>
+              <%= link_to image_tag("box-1.png", :alt => "box", class: "most-reviewed"), box_path(@most_reviewed) %>
             </div>
             <div class="column">
               <h3><strong><%= @most_reviewed.color %> <%= @most_reviewed.name %></strong> Box</h3>
@@ -27,7 +27,7 @@
           <div class="row">
             <div class="columns">
               <% @boxes.three_most_recent.each do |box| %>
-                <div class="column box subbox" id="subbox1">
+                <div class="column subbox">
                   <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
                   <p><strong><%= box.color %> <%= box.name %></strong> Box</p>
                   <p>$<%= box.price %></p>

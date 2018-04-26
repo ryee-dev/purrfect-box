@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(){
    $(".add-box").click(function(){
        $(".box-form").fadeIn('slow');
        $(".current-boxes").hide();
