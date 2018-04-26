@@ -42,14 +42,25 @@
   .most-reviewed {
     display: block;
     margin: 0 auto;
+    width: 55%;
+  }
+  .most-recent {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.2em;
+    width: 45%;
   }
 }
 
 #logo {
   img {
-    height: 15%;
-    width: 15%;
+    display: block;
+    top: 2em;
+    height: 20%;
+    width: 20%;
     margin: 0 auto;
+    margin-top: -.25em;
+    margin-bottom: -1em;
   }
 }
 

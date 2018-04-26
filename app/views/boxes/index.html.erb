@@ -28,7 +28,7 @@
             <div class="columns">
               <% @boxes.three_most_recent.each do |box| %>
                 <div class="column subbox">
-                  <%= link_to image_tag("box-1.png", :alt => "box"), box_path(box) %>
+                  <%= link_to image_tag("box-1.png", :alt => "box", class: "most-recent"), box_path(box) %>
                   <p><strong><%= box.color %> <%= box.name %></strong> Box</p>
                   <p>$<%= box.price %></p>
                   <p class="review-amount"><%= box.reviews.length %> reviews</p>
