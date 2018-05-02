@@ -59,6 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'rspec-rails'
 gem 'launchy'
+gem 'capybara'
 gem 'pry'
 gem 'shoulda-matchers'
 gem 'faker'

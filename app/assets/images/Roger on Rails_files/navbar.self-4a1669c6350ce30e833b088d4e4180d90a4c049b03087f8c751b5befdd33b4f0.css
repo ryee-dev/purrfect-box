@@ -1,0 +1,38 @@
+/* line 1, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar {
+  background-color: #666666;
+  width: 100%;
+  top: 0;
+  position: relative;
+}
+/* line 7, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .nav-links {
+  color: white;
+  font-weight: 500;
+}
+/* line 11, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .nav-links:hover {
+  color: cornsilk;
+  font-weight: bold;
+}
+/* line 17, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .navbar-item {
+  color: white;
+}
+/* line 22, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .welcome-user p {
+  width: 400px;
+  font-size: 1.25em;
+  display: block;
+  text-align: center;
+  margin: 0.75em auto;
+  color: white;
+}
+/* line 30, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .welcome-user p strong {
+  color: white;
+}
+/* line 36, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/navbar.scss */
+nav.navbar .navbar-start, nav.navbar .navbar-end {
+  width: 50%;
+}

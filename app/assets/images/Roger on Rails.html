@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://localhost:3000/users/sign_in -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Roger on Rails</title>
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="hPlmk/PQ2bhZizM5mCf6vSBjCyzyKKTrA5T75YTEfV1vMnLKPHxLp5zijeQ6eRUNWWqDSEKYi2QYHH4Z9Ek/cw==">
+    
+
+    <link rel="stylesheet" media="all" href="./Roger on Rails_files/animations.self-20681247ed0eb3722b54e8225e60da16620eb705b3d6b3aeaac79db8a220c6d1.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/devise.self-e6541a5dc445c99d69a38c21762e39df8092adb4d10b3e001b4c12b8b211201e.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/forms.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/home.self-9cd57a1374431e70753209b7f742a0ce6ef56795c50e60c3384c3bb7a5a4c7e6.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/navbar.self-4a1669c6350ce30e833b088d4e4180d90a4c049b03087f8c751b5befdd33b4f0.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/typography.self-00e2c6be9cec650c352a5d0f4070926bbdf6ed455ddf40c4fab056c93be443b5.css" data-turbolinks-track="reload">
+<link rel="stylesheet" media="all" href="./Roger on Rails_files/application.self-0169a46c96d4a4d86fe5649667008c5548f013f481ab93f671863afe4b88ce9a.css" data-turbolinks-track="reload">
+    <script src="./Roger on Rails_files/rails-ujs.self-551fbd47b981dacbb84a270f9123074caf39eb72aaf6f478ab597c6f81435e4b.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/activestorage.self-6e8d967adecc8b2a7259df0f51ef5b6f171c33267c7d149a474beccd90c68697.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/jquery3.self-5af507e253c37e9c9dcf65064fc3f93795e6e28012780579975a4d709f4074ad.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/animations.self-3faa80df518513a0ffa04722ada1c7de74a413984e9a63819430f45fe88b994d.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js" data-turbolinks-track="reload"></script>
+<script src="./Roger on Rails_files/application.self-d9c1df0d36a69bf8167ebb20070284ed3c5f931e7f6efe185b0936aad00629a6.js" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body cz-shortcut-listen="true">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-start">
+    <div class="navbar-item">
+      <a class="nav-links" href="http://localhost:3000/">Home</a>
+    </div>
+  </div>
+
+    <div class="navbar-item">
+      <p><a class="nav-links" href="http://localhost:3000/users/sign_in">Sign in</a></p>
+      &nbsp;|&nbsp;
+      <p><a class="nav-links" href="http://localhost:3000/users/sign_up">Sign up</a></p>
+    </div>
+    
+</nav>
+    <div class="hero container devise-forms">
+  <div class="box">
+    <h2>User Login</h2>
+    <hr>
+
+    <form class="new_user" id="new_user" action="http://localhost:3000/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="hPlmk/PQ2bhZizM5mCf6vSBjCyzyKKTrA5T75YTEfV1vMnLKPHxLp5zijeQ6eRUNWWqDSEKYi2QYHH4Z9Ek/cw==">
+      <div class="field">
+        <label class="label" for="user_login">Login</label>
+        <input class="input" type="text" name="user[login]" id="user_login">
+      </div>
+
+      <br>
+
+      <div class="field">
+        <label class="label" for="user_password">Password</label>
+        <input autocomplete="off" class="input" type="password" name="user[password]" id="user_password">
+      </div>
+
+      <br>
+
+        <div class="field">
+          <input name="user[remember_me]" type="hidden" value="0"><input class="checkbox" type="checkbox" value="1" name="user[remember_me]" id="user_remember_me">
+          <label class="checkbox" for="user_remember_me">Remember me</label>
+        </div>
+
+      <div class="actions">
+        <input type="submit" name="commit" value="Log in" class="button is-info is-rounded" data-disable-with="Log in">
+      </div>
+</form>
+    <br>
+
+    
+  <a href="http://localhost:3000/users/sign_up">Sign up</a><br>
+
+  <a href="http://localhost:3000/users/password/new">Forgot your password?</a><br>
+
+
+
+
+  </div>
+</div>
+  
+</body></html>

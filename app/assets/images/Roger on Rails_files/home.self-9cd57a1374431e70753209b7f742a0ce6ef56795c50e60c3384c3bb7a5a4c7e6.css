@@ -1,0 +1,27 @@
+/* line 7, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/home.scss */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 12, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/home.scss */
+.nav-term {
+  background-color: whitesmoke;
+  align-self: center;
+  margin: 5vh auto;
+  padding: 3vh 2vw;
+  height: 25vh;
+}
+/* line 19, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/home.scss */
+.nav-term p {
+  color: #666666;
+}
+/* line 23, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/home.scss */
+.nav-term a {
+  color: #666666;
+}
+/* line 26, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/home.scss */
+.nav-term a:hover {
+  color: #2E2F30;
+  font-weight: bold;
+}

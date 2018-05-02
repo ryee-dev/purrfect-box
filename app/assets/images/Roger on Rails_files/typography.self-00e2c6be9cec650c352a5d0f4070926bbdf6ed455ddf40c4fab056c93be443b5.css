@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Input Mono";
+  src: url("fonts/InputMono/InputMono-Regular.ttf") format("truetype");
+}
+/* line 7, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/typography.scss */
+body {
+  font-family: 'Input Mono';
+}
+
+/* line 11, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/typography.scss */
+.home-header {
+  font-size: 36px;
+  width: 100%;
+}

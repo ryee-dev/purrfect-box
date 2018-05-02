@@ -1,0 +1,10 @@
+/* line 1, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/devise.scss */
+.devise-forms {
+  width: 40%;
+  margin: 10vh auto;
+}
+/* line 5, /Users/ryee/Desktop/roger-on-rails/app/assets/stylesheets/devise.scss */
+.devise-forms h2 {
+  font-size: 3.4vh;
+  text-align: center;
+}
